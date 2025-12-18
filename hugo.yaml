@@ -1,90 +1,25 @@
-baseURL: https://billyonare.com/
+baseURL: https://bylly.dev/
 languageCode: en-us
-title: "Billy O'Nare"
-theme: ["PaperMod"]
-
-caches:
-  images:
-    dir: :cachedir/images
-
+title: "Bylly"
+copyright: "© Bylly"
+theme: ["nordie"]
 enableRobotsTXT: true
-buildDrafts: false
-buildFuture: false
-buildExpired: false
 
-minify:
-  disableXML: true
-  minifyOutput: true
-
-params:
-  env: production
-  title: "Billy O'Nare"
-  description: "Billy O'Nare's Blog"
-  keywords:
-    ["blog", "personal", "website", "developer", "software", "engineering"]
-  author: Me
-  defaultTheme: auto
-  disableThemeToggle: false
-
-  ShowReadingTime: true
-  ShowShareButtons: false
-  ShowPostNavLinks: true
-  ShowBreadCrumbs: false
-  ShowCodeCopyButtons: false
-  ShowWordCount: true
-  ShowRssButtonInSectionTermList: true
-  UseHugoToc: true
-  disableSpecial1stPost: false
-  disableScrollToTop: false
-  comments: false
-  hidemeta: false
-  hideSummary: false
-  showtoc: false
-  tocopen: false
-
-  # profile-mode
-  profileMode:
-    enabled: false # needs to be explicitly set
-
-  # home-info mode
-  homeInfoParams:
-    Title: "Hi there \U0001F44B"
-    Content: Welcome to the party!
-
-  socialIcons:
-    - name: github
-      url: "https://github.com/billrisher"
-
-  #analytics:
-  #  google:
-  #    SiteVerificationTag: "XYZabc"
-
-  cover:
-    hidden: true # hide everywhere but not in structured data
-    hiddenInList: true # hide on list pages and home
-    hiddenInSingle: true # hide on single page
-
-menu:
-  main:
-    - identifier: categories
-      name: categories
-      url: /categories/
-      weight: 10
-    - identifier: tags
-      name: tags
-      url: /tags/
-      weight: 20
-    - identifier: example
-      name: example.org
-      url: https://example.org
-      weight: 30
-# Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
-pygmentsUseClasses: true
 markup:
   highlight:
+    style: nord
     noClasses: false
-    # anchorLineNos: true
-    # codeFences: true
-    # guessSyntax: true
-    # lineNos: true
-    # style: monokai
+    lineNos: false
+    lineNumbersInTable: false
+
+# services:
+#  googleAnalytics:
+#    ID: "G-XXXXXX"
+
+params:
+  mode: "toggle"
+  useCDN: true
+  social:
+    - name: github
+      icon: "github"
+      url: "https://github.com/billrisher"

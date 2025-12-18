@@ -6,11 +6,28 @@ title: 'The Joy and Angst of Building Multi-Tenant Applications'
 
 There is a conversation that I have been a part of many times. "Hey, we landed this great contract with a client! They want to use our product, and they want it to behave in drastically different ways than our existing clients. We can make that happen, right?" To which I hesitantly say, "Sure, but that'll take about six sprints of work for us to complete."
 
+{{< callout type="tip" text="This is a tip callout." >}}
+
 Almost always, the response to that is, "Great! What about three instead?" And thus, our fate is sealed.
 
 This was infuriating at first - why are we supporting all these bespoke features for our different clients? Don't they know that these features take time?
 
 And that's when it clicked. If I had taken a step back, and looked at the _nature_ of these requests, it was clear that what we were only going down **one** potential path and use case for our product. It had never occurred to me that we **could**, or even **should**, anticipate what a client may want out of our platform.
+
+```rust
+pub struct User {
+    id: u32,
+    name: String,
+    email: String,
+}
+
+impl User {
+    pub fn new(id: u32, name: String, email: String) -> Self {
+        User { id, name, email }
+    }
+}
+
+```
 
 ## The Original Approach
 
