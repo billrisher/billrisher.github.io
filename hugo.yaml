@@ -12,13 +12,13 @@ markup:
     lineNos: false
     lineNumbersInTable: false
 
-# services:
-#  googleAnalytics:
-#    ID: "G-XXXXXX"
+services:
+  googleAnalytics:
+    id: "G-WPTRH6DRX6"
 
 params:
-  mode: "toggle"
-  useCDN: true
+  mode: "dark"
+  useCDN: false
   social:
     - name: github
       icon: "github"
